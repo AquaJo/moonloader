@@ -92,7 +92,7 @@ this design is only possible due to awesome resources NOT made by me!
 (for most recent credits check them out in ./moonloader/README/credits.txt)
 
 ## DISCLAIMER:
-Only use this extension for downloading copyright-free stuff or videos owned by yourself || in general only for legal usage. \
+Use this extension for legal purpose only! \
 I am not responsible for anything. \
 Feel free to read the  README txt files in ./moonloader/README
 
