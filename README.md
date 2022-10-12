@@ -94,5 +94,5 @@ this design is only possible due to awesome resources NOT made by me!
 ## DISCLAIMER:
 Use this extension for legal purpose only! \
 I am not responsible for anything. \
-Please mind the MIT-license inside ./moonloader/README and feel free to read the other .txt files there
+Please mind the MIT-license inside ./moonloader/README (which relates to the whole moonloader project (as a second reminder in the client files)) and feel free to read the other .txt files there
 
