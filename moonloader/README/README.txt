@@ -1,11 +1,16 @@
-additional information:
+- Please mind the LICENSE (LICENSE.txt) placed in the same parent folder.
+
+Additional Information:
+
+*github-repo: https://github.com/AquaJo/moonloader
+
 
 *description:
 
 Its a Chrome-Extension for downloading youtube videos and playlists named "moonloader", written with chrome manifest v3.
 Its a free to use client side application containing UI elements such as a chrome popup and a background popup (when downloading).
 The client also has the choice not to use an extra html popup for downloading, instead downloading by injecting a script and a pre-tag (for communicating with it) into your current youtube's HTML DOM tree is also a possibility.
-It takes use of content scripts to e.g filter playlist titles without the help of youtube-data api --> read-allowence for, of course ONLY, https://youtube.com/* is needed.
+It takes use of content scripts to e.g filter playlist titles without the help of youtube-data api --> read-allowence for https://youtube.com/* is needed.
 
 In its core it is independent of youtube's data api because this api isn't capable of listing "mixed-playlists" (I believe), so I decided using my content-script's algorithm in general, even if its kinda inefficient.
 This way moonloader is also independent from traffic - limitations according youtube's api.
