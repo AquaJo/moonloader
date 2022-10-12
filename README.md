@@ -94,5 +94,5 @@ this design is only possible due to awesome resources NOT made by me!
 ## DISCLAIMER:
 Use this extension for legal purpose only! \
 I am not responsible for anything. \
-Feel free to read the  README txt files in ./moonloader/README
+Feel free to read the .txt files in ./moonloader/README
 
