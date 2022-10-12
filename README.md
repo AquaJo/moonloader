@@ -7,20 +7,18 @@ Keep in mind this app is still in development, there are known bugs. But for mos
 
 ## how to implement
 - **firstly set up your **own** nodejs - serve, featuring requests for downloading via yt-dl** \
-copy paste the node.js code from ./nodejs.js \
+copy paste the node.js code from ./nodejs/nodejs.js \
 paste it in your nodejs index.js (e.g use free glitch.com hosting services) \
-also include mp3Status/Ticket.txt inside root-/main-folder\
+also include these extra files inside root-/main-folder\
 add the described dependencies in the package .json\
 use "start": "node index.js"\
-disclaimer: mp4Status tickets is still a bit glitched, so sometimes they didn't get deleted --> fix planned for the future\
-(sidenode: ytdl-core v. 4.11.0 doesn't work anymore --> downgrade to ytdl-core@4.9.1)
+disclaimer: mp4Status tickets are still a bit glitched, so sometimes they didn't get deleted --> fix planned for the future\
 
 - **secondly the client - side stuff** \
 download this repo and extract the moonloader folder containing all the important files (NOT the moonloader folder containing e.g LICENSE!) \
-edit config.js and paste your node.js-server adress in declaration of var nodejsURL (in glitch you can find it by clicking "Share" --> Live Site) \
+edit config.js and paste your node.js-server-adress (in glitch you can find it by clicking "Share" --> Live Site) as var nodejsURL \
 now type chrome://extensions into ya chromium based browser (e.g chrome, edge, opea gx ... / not firefox ...) and enable developer mode
-after that place ya extracted moonloader folder inside -- voilà \
-if you want you can pin the moonloader icon into the toolbar
+after that place ya extracted moonloader folder inside -- voilà
 
 ## quick preview
 pictures | descriptions
