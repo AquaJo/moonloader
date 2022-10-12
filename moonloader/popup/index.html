@@ -1,0 +1,460 @@
+<html id="canvas">
+  <head>
+    <title>moonloader - main menue</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Oi&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="libs/jquery-min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="mouseEvents.js"></script>
+    <script src="pageUpdater.js"></script>
+    <script src="libs/font-awesome.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body id="body" class="normBody" style="overflow: hidden">
+    <div id="particles-js" style="overflow: hidden; max-height: 680px"></div>
+    <script type="text/javascript" src="libs/particles.js"></script>
+    <script type="text/javascript" src="libs/particle-app.js"></script>
+
+    <ul class="wrapper">
+      <li
+        class="icon github"
+        style="left: 1px; top: 140px; z-index: 4; display: none"
+      >
+        <span class="tooltip">Github</span>
+        <span><i class="fab fa-github"></i></span>
+      </li>
+    </ul>
+    <strong class="title" style="position: relative; top: -5px"
+      >moonloader</strong
+    >
+
+    <svg
+      id="teaCup"
+      class="tea"
+      width="37"
+      height="48"
+      viewbox="0 0 37 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      style="display: block"
+    >
+      <path
+        d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z"
+        stroke="var(--secondary)"
+        stroke-width="2"
+      ></path>
+      <path
+        d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34"
+        stroke="var(--secondary)"
+        stroke-width="2"
+      ></path>
+      <path
+        id="teabag"
+        fill="var(--secondary)"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z"
+      ></path>
+      <path
+        id="steamL"
+        d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke="var(--secondary)"
+      ></path>
+      <path
+        id="steamR"
+        d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13"
+        stroke="var(--secondary)"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </svg>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Roboto:400,900"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <div class="container">
+      <a id="button1" class="btn" style="top: -7px">
+        <svg id="buttonb" width="277" height="62">
+          <defs>
+            <linearGradient id="grad1">
+              <stop offset="0%" stop-color="#FF8282" />
+              <stop offset="100%" stop-color="#E178ED" />
+            </linearGradient>
+          </defs>
+          <rect
+            x="5"
+            y="5"
+            rx="25"
+            fill="none"
+            stroke="url(#grad1)"
+            width="266"
+            height="50"
+          ></rect>
+        </svg>
+        <!--<span>Voir mes réalisations</span>-->
+        <span>normal download</span>
+      </a>
+      <a
+        id="button2"
+        href="https://google.com"
+        class="btn"
+        style="top: -156px"
+        title="this feature is currently in progress"
+      >
+        <svg width="277" height="62">
+          <defs>
+            <linearGradient id="grad">
+              <stop offset="0%" stop-color="#FF8282" />
+              <stop offset="100%" stop-color="#E178ED" />
+            </linearGradient>
+          </defs>
+          <rect
+            x="5"
+            y="5"
+            rx="25"
+            fill="none"
+            stroke="url(#grad)"
+            width="266"
+            height="50"
+          ></rect>
+        </svg>
+        <!--<span>Voir mes réalisations</span>-->
+        <span>gif download</span>
+      </a>
+    </div>
+    <ul class="wrapper">
+      <li
+        id="github"
+        class="icon github"
+        style="left: 4px; top: 140px; z-index: 4; visibility: hidden"
+      >
+        <span class="tooltip">Github</span>
+        <span><i class="fab fa-github"></i></span>
+      </li>
+    </ul>
+    <div id="versionsBtn1">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br /><br /><br />
+      <div
+        id="versions1"
+        class="btn2 from-left"
+        style="font-size: 17px; filter: brightness(0.5)"
+      >
+        versions
+      </div>
+    </div>
+    <div id="error" style="display: none">
+      <br class="noInputStuff" style="display: none" />
+      <p class="normFont" style="line-height: 35px">only working on youtube</p>
+      <div
+        id="urlInput"
+        style="display: none; position: absolute; left: 19px; top: 100px"
+        class="urlInputStuff"
+      >
+        <label class="field">
+          <span class="icon pencil-icon">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M12 20h9"></path>
+              <path
+                id="pencil"
+                class="pencil"
+                d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"
+              ></path>
+            </svg>
+          </span>
+          <input
+            id="inputError"
+            class="input"
+            type="text"
+            autocomplete="off"
+            placeholder="or type url here & enter"
+            style="z-index: 3 !important"
+          />
+          <span id="eraser" class="icon eraser" style="z-index: 4 !important">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              style="z-index: 4 !important"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                style="z-index: 4 !important"
+              ></circle>
+              <line x1="15" y1="9" x2="9" y2="15"></line>
+              <line x1="9" y1="9" x2="15" y2="15"></line>
+            </svg>
+          </span>
+        </label>
+      </div>
+      <br class="urlInputStuff" style="display: none" />
+      <br />
+      <div
+        id="versions2"
+        class="btn2 from-left"
+        style="font-size: 17px; filter: brightness(0.5)"
+      >
+        versions
+      </div>
+    </div>
+
+    <div id="bodyVidDownload" class="extendedBody" style="display: none">
+      <section style="top: 6%">
+        <input id="zeroCheck" type="checkbox" />
+        <label
+          id="labelZeroCheck"
+          for="zeroCheck"
+          title="downloading is done through&#10;injecting a temporary script and&#10;a pre-tag (for communicating with it)&#10;into your current youtube's HTML DOM"
+        >
+          <span id="spanZero"></span>
+          download in background
+        </label>
+        <input id="oneCheck" type="checkbox" />
+        <label for="oneCheck">
+          <span></span>
+          remove video sequence
+        </label>
+        <input id="twoCheck" type="checkbox" />
+        <label for="twoCheck">
+          <span></span>
+          remove audio sequence
+        </label>
+        <input id="threeCheck" type="checkbox" />
+        <label for="threeCheck">
+          <span></span>
+          download as mp3
+        </label>
+      </section>
+      <br />
+
+      <div id="qualitySelector">
+        <br />
+        <br />
+        <br />
+        <br />
+        <hr style="height: 4px; visibility: hidden" />
+        <p class="normFont" style="font-size: 1.53em">choose quality</p>
+        <div id="selectorDiv1" class="select" tabindex="1">
+          <input class="selectopt" name="test" type="radio" id="opt1" checked />
+          <label for="opt1" class="option">best (very big files)</label>
+          <input class="selectopt" name="test" type="radio" id="opt2" />
+          <label for="opt2" class="option">1080p</label>
+          <input class="selectopt" name="test" type="radio" id="opt3" />
+          <label for="opt3" class="option">720p</label>
+          <input class="selectopt" name="test" type="radio" id="opt4" />
+          <label for="opt4" class="option">480p</label>
+          <input class="selectopt" name="test" type="radio" id="opt5" />
+          <label for="opt5" class="option">360p</label>
+        </div>
+      </div>
+      <div id="vidDownloadBtnSpacer" style="display: none">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+      <div
+        id="vidDownloadBtn1"
+        class="btn2 from-bottom"
+        style="font-size: 22.5px"
+      >
+        download
+      </div>
+      <div
+        id="vidDownloadBtn2"
+        class="btn2 from-bottom"
+        style="font-size: 22.5px"
+      >
+        download playlist
+      </div>
+    </div>
+
+    <div id="loading" class="loadingDiv" style="display: none">
+      <h1>
+        <span id="span1" class="let1">l</span>
+        <span id="span1" class="let2">o</span>
+        <span id="span1" class="let3">a</span>
+        <span id="span1" class="let4">d</span>
+        <span id="span1" class="let5">i</span>
+        <span id="span1" class="let6">n</span>
+        <span id="span1" class="let7">g</span>
+        <p
+          id="currentDownload"
+          class="normFont"
+          style="font-size: 1.3em; margin-top: 140px; display: none"
+        >
+          currently downloading:
+        </p>
+        <p
+          id="currentDownloadTitle"
+          class="normFont"
+          style="font-size: 1.23em; display: none"
+        >
+          vid title not named
+        </p>
+      </h1>
+    </div>
+    <div id="noInternet" style="display: none">
+      <br />
+      <br />
+      <p class="normFont">internet connetion needed</p>
+    </div>
+
+    <div id="playlistVideoSelectorMain" style="overflow: hidden; display: none">
+      <br />
+
+      <div
+        class="form-group"
+        style="
+          float: left;
+          width: 43%;
+          padding-left: 50px;
+          transform: translateY(-5px);
+        "
+      >
+        <span>start</span>
+        <input
+          id="playlistInput1"
+          class="form-field"
+          type="text"
+          placeholder="index"
+        />
+      </div>
+
+      <div
+        class="form-group"
+        style="
+          float: right;
+          width: 43%;
+          padding-right: 50px;
+          transform: translateY(-5px);
+        "
+      >
+        <input
+          id="playlistInput2"
+          class="form-field"
+          type="text"
+          placeholder="index"
+        />
+        <span>end</span>
+      </div>
+
+      <div
+        id="playlistVideoSelector"
+        style="
+          clear: left;
+          overflow: scroll;
+          max-height: 432px;
+          transform: translateY(-24px);
+        "
+      >
+        <form id="playlistVideoSelectorForm" class="form"></form>
+      </div>
+      <div
+        id="playlistDownloadBtn"
+        class="btn2 from-bottom"
+        style="font-size: 22.5px; transform: translateY(-100px)"
+      >
+        continue
+      </div>
+    </div>
+
+    <div id="playlistDownloadMenue" style="display: none; overflow: hidden">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="flex-wrapper" style="transform: translate(50px, -40px)">
+        <div class="single-chart">
+          <svg
+            viewBox="0 0 36 36"
+            class="circular-chart green"
+            style="transform: scale(1.5, 1.5)"
+          >
+            <path
+              class="circle-bg"
+              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path
+              id="circle"
+              class="circle"
+              stroke-dasharray="60, 100"
+              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <text id="circleText" x="18" y="20.35" class="percentage">60%</text>
+          </svg>
+        </div>
+      </div>
+      <p
+        id="downloadedInfo"
+        style="
+          text-align: left;
+          font-size: 1.7em;
+          position: relative;
+          top: -165px;
+          left: 220px;
+          color: #fff;
+          text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
+        "
+      >
+        downloaded: x/y
+      </p>
+      <br /><br />
+      <div id="container" style="position: relative; top: -130px; left: 5px">
+        <div
+          id="message"
+          style="overflow: scroll; position: relative; height: 177px"
+        ></div>
+      </div>
+      <div
+        id="playlistCancel"
+        class="btn2 from-right"
+        style="zoom: 0.7; font-size: 21px; position: relative; top: -246px"
+      >
+        cancel
+      </div>
+    </div>
+  </body>
+</html>

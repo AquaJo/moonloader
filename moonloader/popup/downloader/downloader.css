@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.85em;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  display: none;
+  /* make scrollbar transparent */
+}
+
+.heading {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 10px;
+}
+
+.heading h1 {
+  color: white;
+  font-size: 23px;
+}
+
+.heading h3 {
+  color: wheat;
+  font-size: 20px;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+  height: 100%;
+  width: 100%;
+}

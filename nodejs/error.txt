@@ -1,0 +1,10 @@
+While downloading this file, an error occured.
+There are multiple possible reasons for this:
+- some serverside ratelimits exceeded
+
+- you wanted to download a long youtube video as mp3 --> too long request to handle mp3 convertion, try an more direct mp4 download
+- youtube id does not exist
+- video is regionally restricted
+- video is age restricted or has any special protection
+- video is private
+- video requires YouTube Premium

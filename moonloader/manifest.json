@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "moonloader - a youtube converter",
+  "version": "0.4",
+  "icons": {
+    "16": "icons/icon16v3.png",
+    "48": "icons/icon48v3.png",
+    "128": "icons/icon128v3.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "run_at": "document_end",
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/index.html"
+  },
+  "update_url": "http://myhost.com/mytestextension/updates.xml",
+  "web_accessible_resources": [
+    {
+      "resources": ["/popup/index.html", "DOMDownloader.js"],
+      "matches": ["https://www.youtube.com/*"]
+    }
+  ],
+  "permissions": ["storage"],
+  "host_permissions": ["https://www.youtube.com/*"]
+}
