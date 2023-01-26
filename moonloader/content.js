@@ -356,6 +356,11 @@ let downloadCounter = 0;
 
 function updateYTDownloadDialog(bump) {
   let downloadDialog = document.getElementsByTagName("ytd-offline-promo-renderer")[0];
+  // CHANGED ELEMENTS BECAUSE OF YOUTUBE HTML CHANGE IN DOWNLOAD DIALOG, A RECURSIVE LOOP WOULD ALSO BE POSSIBLE
+  downloadDialog.children[2].children[0].style.display = "none";
+  selectBox = downloadDialog.children[2].children[1];
+  qualityElement = selectBox.children[0].children[0].children[0];
+  subText = downloadDialog.children[2].children[2];
   //console.log(downloadDialog);
   let children = downloadDialog.children;
   let title;
@@ -369,7 +374,7 @@ function updateYTDownloadDialog(bump) {
       mainText = children[c];
 
     } else if (children[c].id === "description") {
-      subText = children[c];
+      //subText = children[c]; YT CHANGES
     } else if (children[c].getAttribute('class') === "buttons style-scope ytd-offline-promo-renderer") {
       let children2 = children[c].children;
       for (let i = 0; i < children2.length; ++i) {
@@ -380,26 +385,32 @@ function updateYTDownloadDialog(bump) {
         }
       }
     } else if (children[c].id === "premium-options") {
+      /* YT CHANGES
       try {
         selectBox = children[c];
         qualityElement = children[c].children[0].children[0].children[0];
 
       } catch (e) {
 
-      }
+      }*/ 
     }
+  }
+  let titleChildren = title.children;
+  for (let i = 1; i < titleChildren.length; ++i) {
+    titleChildren[i].style.display = "none";
   }
 
   // set download btn
   let btnTextEl = downloadBtnRes.children[0].children[0].children[0];
-  btnTextEl.innerHTML = "download";
+  //console.log(btnTextEl);
+  btnTextEl.innerText = "download";
 
-  title.innerHTML = "Dieses Video ohne Premium herunterladen";
+  title.innerText = "Dieses Video ohne Premium herunterladen";
 
   subText.innerHTML = "* dialog modified by moonloader" + "<br />" + "* for more customization click the app-icon" + "<br />" + "* keep in mind, connecting to glitch can take a moment";
   if (downloadCounter == 0) {
     downloadBtn.remove();
-    mainText.remove();
+    //mainText.remove(); // yt changed stuff
     downloadCounter++;
   }
   if (bump) {
@@ -440,7 +451,6 @@ let observer2 = new MutationObserver((mutations) => {
 
         setTimeout(function() { // listen for new opening / close
           let downloadDialogMain = document.getElementsByTagName("tp-yt-paper-dialog")[0];
-
           let changeCounter = 0;
           let observer3 = new MutationObserver(function(mutations) { // ik
             if (changeCounter % 2 == 1) {
