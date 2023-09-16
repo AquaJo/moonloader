@@ -6,7 +6,7 @@ Either download over the rocket app icon, which provides the main app with most 
 Keep in mind this app is still in development, there are known bugs. But for most users its core - elements should mostly work.
 
 ## how to implement
-- **firstly set up your **own** nodejs - serve, featuring requests for downloading via yt-dl** \
+- **firstly set up your **own** nodejs - server, featuring requests for downloading via yt-dl** (curl required at the moment) \
 copy paste the node.js code from ./nodejs/nodejs.js \
 paste it in your nodejs index.js (e.g use free glitch.com hosting services) \
 also include these extra files inside root-/main-folder\
