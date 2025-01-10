@@ -1,5 +1,5 @@
 # moonloader
-moonloader is a chrome extension (in development), allowing you to download youtube videos or even whole playlists in one step as mp4 in different qualities, mp3 or as gif (gif feature currently in development). 
+moonloader is a chrome extension (deprecated), allowing you to download youtube videos or even whole playlists in one step as mp4 in different qualities, mp3 or as gif (gif feature currently in development). 
 
 Either download over the rocket app icon, which provides the main app with most customization or just use youtubes download - button, that now is changed by moonloader.
 
